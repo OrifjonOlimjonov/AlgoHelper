@@ -1,5 +1,7 @@
 package uz.orifjon.algohelper
 
+import java.lang.StringBuilder
+
 object Algo {
 
     fun checkChar(text:String, char: Char):Boolean{
@@ -22,5 +24,17 @@ object Algo {
             }
         }
         return -1
+    }
+
+    fun convertCase(text: String):String{
+        val str = StringBuilder()
+        for (c in text) {
+            if(c.isLowerCase()) {
+                str.append(c.uppercase())
+            }else{
+                str.append(c.lowercase())
+            }
+        }
+        return str.toString()
     }
 }
