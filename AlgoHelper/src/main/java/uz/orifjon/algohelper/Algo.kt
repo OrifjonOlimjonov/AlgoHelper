@@ -37,4 +37,12 @@ object Algo {
         }
         return str.toString()
     }
+
+
+    fun checkDivided(a:Int,b:Int):Boolean = a % b == 0
+
+
+
+
+    
 }
