@@ -38,11 +38,7 @@ object Algo {
         return str.toString()
     }
 
-
     fun checkDivided(a:Int,b:Int):Boolean = a % b == 0
-
-
-
-
+    infix fun Int.add(a:Int):Int = this + a
     
 }
